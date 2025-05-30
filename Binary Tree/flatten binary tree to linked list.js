@@ -15,7 +15,7 @@ function flatten(root) {
   prev = root;
 }
 
-// 测试构建树 [1,2,5,3,4,null,6]
+
 const root = new TreeNode(1,
   new TreeNode(2,
     new TreeNode(3),
@@ -29,9 +29,9 @@ const root = new TreeNode(1,
 
 flatten(root);
 
-// 输出链表
+
 let node = root;
 while (node) {
-  console.log(node.val);  // 应该打印 1 2 3 4 5 6
+  console.log(node.val);  // print 1 2 3 4 5 6
   node = node.right;
 }
