@@ -46,5 +46,5 @@ let root = new TreeNode(
     new TreeNode(3, null, new TreeNode(6))
 );
 
-// 调用 zigzagLevelOrder
+// zigzagLevelOrder
 console.log(zigzagLevelOrder(root));
