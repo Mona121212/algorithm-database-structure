@@ -7,6 +7,7 @@ var isTree = function(preorder, inorder) {
         const index = inorder.indexOf(preorder.shift());
         const root = new TreeNode(inorder[index]);
 
+        // preorder.shift() traveral is root -> root.left -> root.right
         root.left = isTree(preorder, inorder(0, index));
         root.right = isTree(preorder, inorder(index + 1));
     }
