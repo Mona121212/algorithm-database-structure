@@ -4,8 +4,13 @@ var sumNumbers = function(root) {
 
         sumRoot = sumRoot*10 + node.val;
 
-        let nodeLeft = isSumNumbers(root.left);
-        let nodeRight = isSumNumbers(root.right);
+        // terminate condition
+        if(!node.left && ! node.right) {
+            return sumRoot;
+        }
+
+        let nodeLeft = isSumNumbers(root.left, sumRoot);
+        let nodeRight = isSumNumbers(root.right, sumRoot);
 
         return nodeLeft + nodeRight;
     }
