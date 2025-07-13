@@ -8,6 +8,7 @@ var getMinimumDifference = function(root) {
         if(!root) return;
         isMin(node.left);
 
+
         if(prev !== null) {
             minDiff = Math.min(minDiff, node.val - prev);
         }
