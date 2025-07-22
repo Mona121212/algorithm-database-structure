@@ -8,7 +8,7 @@ var gameOfLife = function(board) {
         [-1, 0],         [0, 1],
         [-1, -1], [0, -1], [1, -1]
     ]
-
+    // loop x and y surround suitation
     function liveNeighbor(r, c) {
         let count = 0;
         for(const [dx, dy] of directions) {
