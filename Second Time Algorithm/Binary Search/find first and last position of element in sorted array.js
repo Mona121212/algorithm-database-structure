@@ -6,7 +6,7 @@ var searchRange = function(nums, target) {
 
         while(left <= right) {
             let mid = Math.floor((left + right) / 2);
-
+            // point will move to the first location is left
             if(target > nums[mid]) {
                 left = mid + 1;
             } else {
@@ -24,7 +24,7 @@ var searchRange = function(nums, target) {
 
         while(left <= right) {
             let mid = Math.floor((left + right) / 2);
-
+            // point will move to the first location is right;
             if(target < nums[mid]) {
                 right = mid - 1;
             } else {
